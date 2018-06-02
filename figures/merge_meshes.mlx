@@ -1,0 +1,9 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Flatten Visible Layers">
+  <Param description="Merge Only Visible Layers" type="RichBool" name="MergeVisible" tooltip="Merge the vertices that are duplicated among different layers. &lt;br>Very useful when the layers are spliced portions of a single big mesh." value="false"/>
+  <Param description="Delete Layers " type="RichBool" name="DeleteLayer" tooltip="Delete all the merged layers. &lt;br>If all layers are visible only a single layer will remain after the invocation of this filter" value="true"/>
+  <Param description="Merge duplicate vertices" type="RichBool" name="MergeVertices" tooltip="Merge the vertices that are duplicated among different layers. &#xa;&#xa;Very useful when the layers are spliced portions of a single big mesh." value="false"/>
+  <Param description="Keep unreferenced vertices" type="RichBool" name="AlsoUnreferenced" tooltip="Do not discard unreferenced vertices from source layers&#xa;&#xa;Necessary for point-only layers" value="false"/>
+ </filter>
+</FilterScript>
