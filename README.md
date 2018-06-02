@@ -89,7 +89,7 @@ We provide script files in [figures](figures) regenerating results in the paper 
 
 The script files require [ComplementMe](https://mhsung.github.io/component-assembly.html) *mesh* data, and the mesh data is provided by the authors upon request (see [here](https://mhsung.github.io/component-assembly.html#data-download)). Download the mesh data in [data](data) directory and unzip them.
 
-For running the script files, first download/generate all data, download pretrained models, and run the batch retrieval scripts as described above. The outputs of each figure script are stored as mesh files, and the results of compared methods are not generated. Also, the position of retrieved complement partial shapes are not predicted since it is not a part of this project.
+For running the script files, first download/generate all data, download pretrained models, and run the batch retrieval scripts as described above. The outputs of each figure script are stored as mesh files, and the results of compared methods are not generated. Also, the position of retrieved complement partial shapes are not predicted since it is not a part of this work.
 
 Note that the scripts have a dependency with [MeshLab](http://www.meshlab.net/). Ubuntu users can install with apt-get:
 ```
