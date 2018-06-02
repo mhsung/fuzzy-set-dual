@@ -28,11 +28,18 @@ This neural-network-based framework analyzes an uncurated collection of 3D model
 - TensorFlow-gpu (tested with ver. 1.4.0)
 
 ### Reproducing paper results
-#### Data download
+#### Data download/generation
 Download [ComplementMe](https://mhsung.github.io/component-assembly.html) component point cloud data:
 ```
 cd data
 ./download_complement_me_data.sh
+cd ..
+```
+
+The partial shapes used in the paper can be generated from the components by the following script:
+```
+cd data
+./batch_generate_partial_objects.sh
 cd ..
 ```
 
@@ -67,16 +74,22 @@ For learning *interchangeability*, run:
 
 The trained models are stored in `fuzzy_set_dual/experiments/($synset)/vanilla_100_centerize_relative` and `fuzzy_set_dual/experiments/($synset)/vanilla_100_centerize` directories, respectively.
 
-The evaluations introduced in the paper are performed with the trained models when runnning the same `run_experiment.py` script without the `--train` option.
 
-For running the evaluation code for all categories, run:
+#### Retrieval
+The retrieval of complementary and interchangeable partial shapes are performed by runnning the same `run_experiment.py` script without the `--train` option.
+
+For retrieving with all test partial shapes in all categories as quries, run:
 ```
 batch_run_complementarity.sh
 batch_run_interchangeability.sh
 ```
 
 #### Regenerating paper figures/tables.
-We provide script files in [figures](figures) regenerating results in the paper figures and tables. The script files require [ComplementMe](https://mhsung.github.io/component-assembly.html) *mesh* data, and the mesh data is provided by the authors upon request (see [here](https://mhsung.github.io/component-assembly.html#data-download)). Download the mesh data in [data](data) directory and unzip them. The outputs are stored as mesh files, and the results of compared methods are not generated. Also, the position of retrieved complement partial shapes are not predicted since it is not a part of this project.
+We provide script files in [figures](figures) regenerating results in the paper figures and tables.
+
+The script files require [ComplementMe](https://mhsung.github.io/component-assembly.html) *mesh* data, and the mesh data is provided by the authors upon request (see [here](https://mhsung.github.io/component-assembly.html#data-download)). Download the mesh data in [data](data) directory and unzip them.
+
+For running the script files, first download/generate all data, download pretrained models, and run the batch retrieval scripts as described above. The outputs of each figure script are stored as mesh files, and the results of compared methods are not generated. Also, the position of retrieved complement partial shapes are not predicted since it is not a part of this project.
 
 Note that the scripts have a dependency with [MeshLab](http://www.meshlab.net/). Ubuntu users can install with apt-get:
 ```
