@@ -1,8 +1,10 @@
 ## Learning Fuzzy Set Representations of Partial Shapes on Dual Embedding Spaces
 
-[Minhyuk Sung](http://mhsung.github.io), [Anastasia Dubrovina](http://web.stanford.edu/~adkarni/), [Vladimir G. Kim](http://vova.kim), and [Leonidas Guibas](https://geometry.stanford.edu/member/guibas/)<br>
+<!--[Minhyuk Sung](http://mhsung.github.io), [Anastasia Dubrovina](http://web.stanford.edu/~adkarni/), [Vladimir G. Kim](http://vova.kim), and [Leonidas Guibas](https://geometry.stanford.edu/member/guibas/)<br>
 Conditionally accepted to SGP 2018<br>
 [[Project]](https://mhsung.github.io/fuzzy-set-dual.html) | [arXiv: TBA]
+-->
+Conditionally accepted to SGP 2018<br>
 
 ![teaser](https://mhsung.github.io/assets/images/fuzzy-set-dual/teaser.png)
 
