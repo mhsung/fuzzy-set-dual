@@ -8,6 +8,7 @@ Conditionally accepted to SGP 2018<br>
 
 ![teaser](https://mhsung.github.io/assets/images/fuzzy-set-dual/teaser.png)
 
+<!--
 ### Citation
 ```
 @article{Sung:2018,
@@ -17,6 +18,7 @@ Conditionally accepted to SGP 2018<br>
   year = {2018}
 }
 ```
+-->
 
 ### Introduction
 This neural-network-based framework analyzes an uncurated collection of 3D models from the same category and learns two important types of semantic relations among full and partial shapes: complementarity and interchangeability. The former helps to identify which two partial shapes make a complete plausible object, and the latter indicates that interchanging two partial shapes from different objects preserves the object plausibility. These two relations are modeled as *fuzzy set* operations performed across the *dual* partial shape embedding spaces, and within each space, respectively, and *jointly* learned by encoding partial shapes as *fuzzy sets* in the dual spaces.
